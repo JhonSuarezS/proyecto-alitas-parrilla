@@ -25,11 +25,11 @@
          </div>
          <div class="offcanvas offcanvas-start" :class="showMenu ? 'show' : ''" tabindex="-1" :style="{ visibility: showMenu ? 'visible' : 'hidden' }">
              <div class="offcanvas-header">
-                 <h5 class="offcanvas-title" id="">Offcanvas with backdrop</h5>
+                 <h5 class="offcanvas-title" id="">Alitas Parrilla</h5>
                  <button type="button" class="btn-close text-reset" @click.prevent="showOffcanvasMenu()"></button>
              </div>
              <div class="offcanvas-body">
-                 <p>Alitas Parrilla</p>
+                 <p></p>
              </div>
          </div>
      </nav>
