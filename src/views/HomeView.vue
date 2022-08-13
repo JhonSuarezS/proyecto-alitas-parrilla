@@ -1,18 +1,29 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <div>
+      <NavBar></NavBar>
+    </div>
+    <div>
+      <SideBar></SideBar>
+    </div>
+    <div>
+      <CartShop></CartShop>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
+import NavBar from '@/components/NavBar.vue';
 import Vue from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import CartShop from '@/components/CartShop.vue';
+import SideBar from '@/components/SideBar.vue';
 
 export default Vue.extend({
   name: 'HomeView',
   components: {
-    HelloWorld,
-  },
+    NavBar,
+    CartShop,
+    SideBar
+},
 });
 </script>

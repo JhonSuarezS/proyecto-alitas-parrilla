@@ -1,0 +1,22 @@
+.container-navbar{
+    background: #4b030f;  
+    margin-left: 2%;
+}
+.container-img{
+    width: 13%;
+    vertical-align: super
+}
+
+.contain{
+    background: #4b030f;
+    width: 100%;
+}
+.icon-nav{
+    width: 20px;
+    height: 20px;
+    background-color: #4b030f;
+    padding: 0;
+}
+.margin-nav{
+    margin-top: 10px;
+}
