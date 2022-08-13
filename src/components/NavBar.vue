@@ -29,7 +29,7 @@
                  <button type="button" class="btn-close text-reset" @click.prevent="showOffcanvasMenu()"></button>
              </div>
              <div class="offcanvas-body">
-                 <p>.....</p>
+                 <p>Alitas Parrilla</p>
              </div>
          </div>
      </nav>
