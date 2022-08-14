@@ -1,7 +1,7 @@
 <template>
   <div class="container-navbar container-fluid">
    <div class="container py-2">
-     <nav class="navbar navbar-collapse navbar-dark  fixed-top">
+     <nav class="navbar navbar-collapse navbar-dark">
          <div class="contain">
           <b-row>
             <b-col>
