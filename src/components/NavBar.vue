@@ -12,7 +12,7 @@
              </span>
             </b-col>
             <b-col>
-              <img src="@/assets/img/logo_alitas.jpg" class="img-fluid container-img"  alt="Responsive image">
+              <img src="@/assets/img/logo_alitas.jpg" class="img-fluid container-img-navbar"  alt="Responsive image">
             </b-col>
             <b-col>
               <div class="input-group margin-nav">
@@ -23,13 +23,18 @@
             </b-col>
           </b-row>  
          </div>
-         <div class="offcanvas offcanvas-start" :class="showMenu ? 'show' : ''" tabindex="-1" :style="{ visibility: showMenu ? 'visible' : 'hidden' }">
+         <div class="offcanvas offcanvas-start" aria-labelledby="offcanvasWithBackdropLabel" id="offcanvasWithBackdrop" :class="showMenu ? 'show' : ''" tabindex="-1" :style="{ visibility: showMenu ? 'visible' : 'hidden' }">
              <div class="offcanvas-header">
-                 <h5 class="offcanvas-title" id="">Alitas Parrilla</h5>
+                 <h5 class="offcanvas-title-center" id="">Alitas Parrilla</h5>
                  <button type="button" class="btn-close text-reset" @click.prevent="showOffcanvasMenu()"></button>
              </div>
              <div class="offcanvas-body">
-                 <p></p>
+              <img src="@/assets/img/Logo-Parrilla.jpg" class="img-fluid container-img-sidebar"  alt="Responsive image">
+                 <ul>
+                  <li class="link"><button  type="button" class="btn btn-dark button-navbar"><b-icon icon="house"></b-icon>    Inicio</button></li>
+                  <li class="link"><button type="button" class="btn btn-dark button-navbar"><b-icon icon="menu-button-wide-fill"></b-icon>    Menú</button></li>
+                  <li class="link"><button type="button" class="btn btn-dark button-navbar"><b-icon icon="telephone"></b-icon>   Domicilios</button></li>
+                 </ul>
              </div>
          </div>
      </nav>
