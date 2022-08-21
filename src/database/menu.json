@@ -66,6 +66,25 @@
 					"img":"costillitas.jfif"
 				}
 			]
+		},
+		{
+			"categoria":"Mazorcada",
+			"value":[
+				{
+					"name":"Marzocada personal",
+					"desc":"Papa a la francesa, salchicha, chorizo, maíz dulce, papas chips, queso, salsas (rosada, lómale, pina).",
+					"value":14000,
+					"adicional":0,
+					"img":"mazorcada.jpg"
+				},
+				{
+					"name":"Marzocada Mixta",
+					"desc":"Papa a la francesa, chorizo, salchicha, came y pollo desmechado, maíz dulce, papas chips, queso, salsas (rosada, tomate, piña).",
+					"value":20000,
+					"adicional":0,
+					"img":"mazorcada.jpg"
+				}
+			]
 		}
 	]
 }

@@ -24,6 +24,7 @@
 									<div class="col-lg-8">
 										<p class="title-product">{{ details.name }}</p>
 										<p class="price-product">{{ formatNumber((parseFloat(details.value).toFixed(2))) }}</p>
+										<small>{{ details.desc }}</small>
 										<div class="add-cart-item">
 											<button class="btn btn-alitas left">-</button>
 											<input type="text" readonly value="1" class="form-control">
@@ -80,9 +81,13 @@ export default {
 		formatNumber(number){
 			return Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(number)
 		},
+		getProducts(){
+			this.products = inventory.productos
+		}
 	},
 	mounted(){
 		this.getCategories()
+		this.getProducts()
 	}
 }
 </script>
