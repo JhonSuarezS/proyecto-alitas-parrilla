@@ -1,0 +1,51 @@
+.badge{
+	padding:5px;
+	border: 1px solid;
+	color: black;
+	margin: 0 5px;
+	cursor:pointer;
+	transition: all 0.5s;
+}
+
+
+.badge-alitas:hover{
+	background-color: #1e0106;
+	color: white;
+}
+
+.img-product{
+	border-radius: 15px;
+	box-shadow: 5px 10px 20px #ccc
+}
+
+.products-item{
+	margin-bottom:15px;
+	box-shadow: 5px 5px 10px #ccc;
+	padding:10px 20px;
+	max-width: 90%;
+	border-radius: 15px;
+}
+
+.title-product{
+	font-weight: bold;
+}
+
+.add-cart-item{
+	max-width: 40%;
+	display:flex;
+}
+
+.add-cart-item .form-control{
+	border-radius: 0;
+	text-align: center;
+}
+
+.btn.btn-alitas.left{
+	border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.btn.btn-alitas.right{
+	border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

@@ -7,7 +7,7 @@
 			<div class="card-body">
 				<p class="title-products">{{ name.substring(0,20) }}</p>
 				<p>por {{ price }}</p>
-				<button class="btn btn-success" @click="showModalItem(item)">
+				<button class="btn btn-alitas" @click="showModalItem(item)">
 					Comprar ahora
 				</button>
 			</div>

@@ -1,0 +1,71 @@
+{
+	"categorias":[
+		"Alitas",
+		"Costillitas",
+		"Mazorcada",
+		"Salchipapas",
+		"Hamburguesas",
+		"Perro Caliente"
+	],
+	"productos":[
+		{
+			"categoria": "Alitas",
+			"value":[
+				{
+					"name":"7 piezas + 1 salsas",
+					"desc":"",
+					"value":"12500",
+					"adicional":"3000",
+					"img":"alitas.jpg"
+				},
+				{
+					"name":"10 piezas + 2 salsas",
+					"desc":"",
+					"value":"17500",
+					"adicional":"3000",
+					"img":"alitas.jpg"
+				},
+				{
+					"name":"15 piezas + 2 salsas",
+					"desc":"",
+					"value":"25500",
+					"adicional":"3000",
+					"img":"alitas.jpg"
+				},
+				{
+					"name":"20 piezas + 3 salsas",
+					"desc":"",
+					"value":"30500",
+					"adicional":"3000",
+					"img":"alitas.jpg"
+				},
+				{
+					"name":"30 piezas + 3 salsas",
+					"desc":"",
+					"value":"37500",
+					"adicional":"3000",
+					"img":"alitas.jpg"
+				}
+			]
+		},
+		{
+			"categoria":"Costillitas",
+			"value":[
+				{
+					"name":"Costillitas 500 gramos",
+					"desc":"Papa a la francesa y ensalada",
+					"value":25000,
+					"adicional":0,
+					"img":"costillitas.jfif"
+				},
+				{
+					"name":"Costillitas 250 gramos",
+					"desc":"Papa a la francesa",
+					"value":16000,
+					"adicional":0,
+					"img":"costillitas.jfif"
+				}
+			]
+		}
+	]
+}
