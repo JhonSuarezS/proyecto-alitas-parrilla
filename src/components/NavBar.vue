@@ -36,6 +36,7 @@
                   <li class="link"><button type="button" class="btn btn-dark button-navbar"><b-icon icon="telephone"></b-icon>   Domicilios</button></li>
                  </ul>
              </div>
+             <div class="style"></div>
          </div>
      </nav>
     </div>
