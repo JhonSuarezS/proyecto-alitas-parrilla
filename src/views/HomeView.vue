@@ -3,6 +3,13 @@
     <div>
       <NavBar />
     </div>
+	<div class="container-fluid no-padding no-margin">
+		<div class="header-bg">
+			<h1>Alitas a la parrilla</h1>
+			<h5>Te llevamos el menu hasta tu casa</h5>
+			<button class="btn btn-alitas">Conocer menu</button>
+		</div>
+	</div>
 	<div class="catalogo">
 		<div class="container">
 			<div class="row">
@@ -39,6 +46,7 @@ import Vue from 'vue';
 import CartShop from '@/components/CartShop.vue';
 import SideBar from '@/components/SideBar.vue';
 import Item from '@/components/itemDetails.vue'
+import './../assets/estilos/home.css'
 
 export default Vue.extend({
 	name: 'HomeView',

@@ -5,24 +5,28 @@
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+
+.no-padding {
+	padding: 0 !important;
 }
 
-nav {
-  padding: 30px;
+.no-margin {
+	margin: 0 !important;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.btn-alitas{
+	background-color: #4b030f !important;
+	border-color: #4b030f !important;
+	color: white !important;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+.btn-alitas:hover{
+	background-color: #1e0106 !important;
+	border-color: #1e0106 !important;
+	color: white !important;
+}
+
+*{
+	font-family: 'Poppins', sans-serif;
 }
 </style>
