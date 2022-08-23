@@ -29,10 +29,8 @@
 											<button class="btn btn-alitas left">-</button>
 											<input type="text" readonly value="1" class="form-control">
 											<button class="btn btn-alitas right">+</button>
+											<button type="button" class="btn btn-warning" title="Agregue producto al carrito">Agregar</button>
 										</div>	
-										<div>
-											<button class=""></button>
-										</div>
 									</div>
 								</div>
 							</div>

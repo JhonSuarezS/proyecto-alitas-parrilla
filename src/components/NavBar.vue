@@ -18,8 +18,8 @@
               <div class="input-group margin-nav">
                 <input type="search" class="form-control" placeholder="Buscar producto" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <button class="btn btn-danger" type="button">Buscar</button>
-                <button><p class="h2 mb-2"><b-icon icon="cart3" font-scale="1" class=""></b-icon></p></button>
-              </div>
+                <button class="icon-car"><b-icon icon="cart3" font-scale="2" class=""></b-icon></button>
+              </div> 
             </b-col>
           </b-row>  
          </div>

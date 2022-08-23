@@ -25,10 +25,15 @@
 }
 .button-navbar{
     margin-bottom: 5%;
-    width: 70%;
+    
     background-color: #4b030f;
     list-style:none;
 }
 .link{
     list-style:none; 
+}
+.icon-car{
+    background-color: #4b030f;
+    color: aliceblue;
+    border: #4b030f;
 }
