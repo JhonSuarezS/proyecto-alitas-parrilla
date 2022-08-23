@@ -9,13 +9,13 @@
 						<span class="badge badge-pill badge-alitas" v-bind:key="cat" v-on:click="filterCategory(cat)" v-for="cat in categories">{{ cat }}</span>
 					</div>
 				</div>
-				<div class="container">
+				<div class="">
 					<div class="row" v-bind:key="product.categoria" v-for="product in products">
 						<div class="col-lg-12">
 							<h5>{{ product.categoria }}</h5>
 						</div>
 						<hr>
-						<div class="col-lg-4 " v-bind:key="details.name" v-for="details in product.value">
+						<div class="col-lg-4 container-carta " v-bind:key="details.name" v-for="details in product.value">
 							<div class="products-item">
 								<div class="row">
 									<div class="col-lg-4">
@@ -29,8 +29,10 @@
 											<button class="btn btn-alitas left">-</button>
 											<input type="text" readonly value="1" class="form-control">
 											<button class="btn btn-alitas right">+</button>
+										</div>	
+										<div>
+											<button class=""></button>
 										</div>
-										
 									</div>
 								</div>
 							</div>

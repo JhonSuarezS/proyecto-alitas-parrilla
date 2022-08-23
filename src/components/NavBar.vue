@@ -31,9 +31,8 @@
              <div class="offcanvas-body">
               <img src="@/assets/img/Logo-Parrilla.jpg" class="img-fluid container-img-sidebar"  alt="Responsive image">
                  <ul>
-                  <li class="link"><button  type="button" class="btn btn-dark button-navbar"><b-icon icon="house"></b-icon>    Inicio</button></li>
-                  <li  class="link"><button type="button" class="btn btn-dark button-navbar">    Menú</button></li>
-				  <li><router-link to="/carta"><button type="button" class="btn btn-dark button-navbar"><b-icon icon="menu-button-wide-fill"></b-icon>    Menú</button></router-link></li>
+                  <li class="link"><router-link to="/"><button  type="button" class="btn btn-dark button-navbar"><b-icon icon="house"></b-icon>    Inicio</button></router-link></li>
+				          <li class="link"><router-link to="/carta"><button type="button" class="btn btn-dark button-navbar"><b-icon icon="menu-button-wide-fill"></b-icon>    Menú</button></router-link></li>
                   <li class="link"><button type="button" class="btn btn-dark button-navbar"><b-icon icon="telephone"></b-icon>   Domicilios</button></li>
                  </ul>
              </div>

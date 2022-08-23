@@ -7,7 +7,7 @@
 		<div class="header-bg">
 			<h1>Alitas a la parrilla</h1>
 			<h5>Te llevamos el menu hasta tu casa</h5>
-			<button class="btn btn-alitas">Conocer menu</button>
+			<router-link to="/carta"><button class="btn btn-alitas">  Conoce nuestro Menú</button></router-link>
 		</div>
 	</div>
 	<div class="catalogo">

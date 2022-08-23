@@ -3,7 +3,7 @@
 		"Alitas",
 		"Costillitas",
 		"Mazorcada",
-		"Salchipapas",
+		"Salchipapa",
 		"Hamburguesas",
 		"Perro Caliente"
 	],
@@ -71,7 +71,7 @@
 			"categoria":"Mazorcada",
 			"value":[
 				{
-					"name":"Marzocada personal",
+					"name":"Marzocada Personal",
 					"desc":"Papa a la francesa, salchicha, chorizo, maíz dulce, papas chips, queso, salsas (rosada, lómale, pina).",
 					"value":14000,
 					"adicional":0,
@@ -83,6 +83,87 @@
 					"value":20000,
 					"adicional":0,
 					"img":"mazorcada.jpg"
+				}
+			]
+		},
+		{
+			"categoria":"Salchipapa",
+			"value":[
+				{
+					"name":"Salchi personal",
+					"desc":"Papa a la francesa, salchicha, salsa de la casa.",
+					"value":8000,
+					"adicional":0,
+					"img":"mazorcada.jpg"
+				},
+				{
+					"name":"Salchi Mixto",
+					"desc":"Papa a la francesa, salchicha, pollo y carne desmechado, queso, salsa de la casa.",
+					"value":18000,
+					"adicional":0,
+					"img":"mazorcada.jpg"
+				},
+				{
+					"name":"Salchi Criollo",
+					"desc":"Papa criolla, salchicha, came desmechada, chorizo, platano maduro, salsa de la casa.",
+					"value":20000,
+					"adicional":0,
+					"img":"mazorcada.jpg"
+
+				}
+			]
+		},
+		{
+			"categoria":"Hamburguesas",
+			"value":[
+				{
+					"name":"Res 125gr",
+					"desc":"Pan atesanal, queso, vegetales(lechuga, tomate, cebolla).",
+					"value":9500,
+					"adicional":0,
+					"img":"mazorcada.jpg"
+				},
+				{
+					"name":"Res 250gr",
+					"desc":"Papa a la francesa, salchicha, pollo y carne desmechado, queso, salsa de la casa.",
+					"value":14500,
+					"adicional":0,
+					"img":"mazorcada.jpg"
+				},
+				{
+					"name":"La Parrillera",
+					"desc":"Pan artesanal, carne 100% de res, chorizo, queso, jamon, huevo frito, papas chips vegetales...",
+					"value":18500,
+					"adicional":0,
+					"img":"mazorcada.jpg"
+
+				}
+			]
+		},
+		{
+			"categoria":"Perro Caliente",
+			"value":[
+				{
+					"name":"Perro Sencillo",
+					"desc":"Salchicha americana, queso, cebolla, papas chips, salsas.",
+					"value":8000,
+					"adicional":0,
+					"img":"mazorcada.jpg"
+				},
+				{
+					"name":"Perro Mixto",
+					"desc":"Salchicha americana, queso, pollo y carne desmechado, cebolla, papas chips, salsas.",
+					"value":16000,
+					"adicional":0,
+					"img":"mazorcada.jpg"
+				},
+				{
+					"name":"Choriperro",
+					"desc":" Chorizo, queso, cebolla, papas chips, salsas.",
+					"value":10000,
+					"adicional":0,
+					"img":"mazorcada.jpg"
+
 				}
 			]
 		}
