@@ -1,6 +1,6 @@
 .container-navbar{
     background: #4b030f;  
-    margin-left: 2%;
+
 }
 .container-img-navbar{
     width: 15%;
@@ -8,6 +8,10 @@
 }
 .container-img-sidebar{
     width: 40%;
+    vertical-align: super
+}
+.container-img-cart{
+    width: 20%;
     vertical-align: super
 }
 .contain{
@@ -24,8 +28,7 @@
     margin-top: 10px;
 }
 .button-navbar{
-    margin-bottom: 5%;
-    
+    margin-bottom: 5%; 
     background-color: #4b030f;
     list-style:none;
 }
@@ -36,4 +39,8 @@
     background-color: #4b030f;
     color: aliceblue;
     border: #4b030f;
+    margin-left: 30px
+}
+.nav{
+    margin-right: -50px;
 }

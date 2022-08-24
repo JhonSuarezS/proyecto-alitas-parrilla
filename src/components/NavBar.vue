@@ -4,23 +4,30 @@
      <nav class="navbar navbar-collapse navbar-dark">
          <div class="contain">
           <b-row>
-            <b-col>
+            <b-col cols="1">
                <span class="float-start">
                  <button class="navbar-toggler" type="button" @click.prevent="showOffcanvasMenu()">
                      <span class="navbar-toggler-icon"></span>
                  </button>
              </span>
             </b-col>
-            <b-col>
-              <img src="@/assets/img/logo_alitas.jpg" class="img-fluid container-img-navbar"  alt="Responsive image">
+            <b-col cols="5">
             </b-col>
-            <b-col>
-              <div class="input-group margin-nav">
+            <b-col cols="5">
+              <div class="input-group margin-nav nav">
                 <input type="search" class="form-control" placeholder="Buscar producto" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <button class="btn btn-danger" type="button">Buscar</button>
-                <button class="icon-car"><b-icon icon="cart3" font-scale="2" class=""></b-icon></button>
               </div> 
             </b-col>
+
+            <b-col cols="1">
+              <span class="float-start">
+                  <button class="icon-car navbar-toggler" type="button" @click.prevent="showOffcanvasCart()">
+                  <b-icon icon="cart3" font-scale="2" class=""></b-icon>
+                  </button>   
+                </span>
+            </b-col>
+
           </b-row>  
          </div>
          <div class="offcanvas offcanvas-start" aria-labelledby="offcanvasWithBackdropLabel" id="offcanvasWithBackdrop" :class="showMenu ? 'show' : ''" tabindex="-1" :style="{ visibility: showMenu ? 'visible' : 'hidden' }">
@@ -38,6 +45,18 @@
              </div>
              <div class="style"></div>
          </div>
+
+         <div class="offcanvas offcanvas-end" aria-labelledby="offcanvasWithBackdropLabel" id="offcanvasWithBackdrop" :class="showCart ? 'show' : ''" tabindex="-1" :style="{ visibility: showCart ? 'visible' : 'hidden' }">
+             <div class="offcanvas-header">
+                 <h5 class="offcanvas-title-center" id="">Mi Carrito</h5>
+                 <button type="button" class="btn-close text-reset" @click.prevent="showOffcanvasCart()"></button>
+             </div>
+             <div class="offcanvas-body">
+              <img src="@/assets/img/Logo-Parrilla.jpg" class="img-fluid container-img-cart"  alt="Responsive image">
+              
+             </div>
+             <div class="style"></div>
+         </div>
      </nav>
     </div>
   </div>
@@ -49,12 +68,16 @@ export default {
     name: 'NavBar',
      data(){
         return {
-          showMenu: false
+          showMenu: false,
+          showCart: false
         }
     },
     methods: {
         showOffcanvasMenu(){
             this.showMenu ? this.showMenu = false : this.showMenu = true;
+        },
+        showOffcanvasCart(){
+            this.showCart ? this.showCart = false : this.showCart = true;
         }
     }
 }
