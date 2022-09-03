@@ -20,7 +20,7 @@
 						:price="item.price"
 						:image="item.image"
 						:item="item"
-					/>
+					/>										
 				</div>
 			</div>
 		</div>
@@ -35,7 +35,6 @@
 				<span class="badge badge-warning">{{ selectedItem.category }}</span>
 				<p>{{ selectedItem.description }}</p>
 			</div>
-			<b-button class="mt-3" block @click="modalShow = false">Cancelar</b-button>
 		</b-modal>
   </div>
 </template>
@@ -65,7 +64,8 @@ export default Vue.extend({
 				category:'',
 				description:'',
 				price:'',
-				image:''
+				image:'',
+				id:''
 			}
 		}
 	},	
@@ -83,7 +83,7 @@ export default Vue.extend({
 			console.log(item)
 			this.selectedItem = item
 			this.modalShow = true
-		}
+		},
 	},
 	mounted(){
 		this.getProduct()

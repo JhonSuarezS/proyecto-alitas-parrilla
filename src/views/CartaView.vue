@@ -26,9 +26,12 @@
 										<p class="price-product">{{ formatNumber((parseFloat(details.value).toFixed(2))) }}</p>
 										<small>{{ details.desc }}</small>
 										<div class="add-cart-item">
-											<button class="btn btn-alitas left">-</button>
-											<input type="text" readonly value="1" class="form-control">
-											<button class="btn btn-alitas right">+</button>
+											<button v-if="counter > '0'" class="btn btn-alitas left" @click="counter--">-</button>
+									        
+											<span style="margin: 10%; ">{{counter}}</span>
+											
+											<button class="btn btn-alitas right" @click="counter++"> +</button>
+																		
 											<button type="button" class="btn btn-warning" title="Agregue producto al carrito">Agregar</button>
 										</div>	
 									</div>
@@ -44,7 +47,7 @@
 
 <script lang="ts">
 import '../assets/estilos/Carta.css'
-import inventory from '../database/menu.json'
+import inventory from './../database/menu.json'
 import NavBarVue from '@/components/NavBar.vue'
 export default {
 	name: "Menu",
@@ -55,7 +58,8 @@ export default {
 		return {
 			categories:[],
 			products:[],
-			assets:'../assets/img/'
+			assets:'../assets/img/',
+			counter: 0
 		}
 	},
 	methods:{
