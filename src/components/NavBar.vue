@@ -24,10 +24,11 @@
               <span class="float-start">
                   <button class="icon-car navbar-toggler" type="button" @click.prevent="showOffcanvasCart()">
                   <b-icon icon="cart3" font-scale="2" class=""></b-icon>
+                  <span class="total-quantity">{{ totalQuantity }}</span> 
                   </button>   
-                </span>
+                </span> 
             </b-col>
-
+            
           </b-row>  
          </div>
          <div class="offcanvas offcanvas-start" aria-labelledby="offcanvasWithBackdropLabel" id="offcanvasWithBackdrop" :class="showMenu ? 'show' : ''" tabindex="-1" :style="{ visibility: showMenu ? 'visible' : 'hidden' }">
@@ -53,11 +54,11 @@
              </div>
              <div class="offcanvas-body">
               <img src="@/assets/img/Logo-Parrilla.jpg" class="img-fluid container-img-cart"  alt="Responsive image">
-              <ul>
-				<li :key="cart.name" v-for="cart in $store.state.cart">
-					{{ cart.name }}
-				</li>
-			  </ul>
+             <ul>
+				     <li :key="cart.name" v-for="cart in $store.state.cart">
+				     	{{ cart.name }}
+				     </li>
+			       </ul>
              </div>
              <div class="style"></div>
          </div>
@@ -68,12 +69,17 @@
 
 <script lang="ts">
 import '@/assets/estilos/navbar.css'
+import inventory from './../database/menu.json'
 export default {
     name: 'NavBar',
+    components:{
+    
+    },
      data(){
         return {
           showMenu: false,
-          showCart: false
+          showCart: false,
+          products:[],
         }
     },
     methods: {
@@ -82,7 +88,13 @@ export default {
         },
         showOffcanvasCart(){
             this.showCart ? this.showCart = false : this.showCart = true;
-        }
+        },
+        totalQuantity() {
+        return this.products.reduce(
+        (total, product) => total + product.quantity,
+        0
+      )
+    }
     }
 }
 </script>

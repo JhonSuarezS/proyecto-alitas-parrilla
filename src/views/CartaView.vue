@@ -17,23 +17,23 @@
 						<hr>
 						<div class="col-lg-4 container-carta " v-bind:key="details.name" v-for="details in product.value">
 							<div class="products-item">
-								<div class="row">
-									<div class="col-lg-4">
-										<img :src="assets+details.img" class="img-product img-fluid" alt=""/>
-									</div>
-									<div class="col-lg-8">
-										<p class="title-product">{{ details.name }}</p>
-										<p class="price-product">{{ formatNumber((parseFloat(details.value).toFixed(2))) }}</p>
-										<small>{{ details.desc }}</small>
-										<div class="add-cart-item">
+								<div class="add-cart-item">
 											<!--<button v-if="counter > '0'" class="btn btn-alitas left" @click="counter--">-</button>
 									        
 											<span style="margin: 10%; ">{{counter}}</span>
 											
 											<button class="btn btn-alitas right" @click="counter++"> +</button>-->
 																		
-											<button type="button" class="btn btn-warning" @click="addToCart(details)" title="Agregue producto al carrito">Agregar</button>
+											<button type="button" class="btn btn-warning" @click="addToCart(details), totalQuantity()" title="Agregue producto al carrito">+</button>
 										</div>	
+								<div class="row">
+									<div class="col-lg-4" style="">
+										<img :src="assets+details.img" class="img-product img-fluid" alt=""/>
+									</div>
+									<div class="col-lg-8">
+										<p class="title-product">{{ details.name }}</p>
+										<p class="price-product">{{ formatNumber((parseFloat(details.value).toFixed(2))) }}</p>
+										<small>{{ details.desc }}</small>
 									</div>
 								</div>
 							</div>
@@ -49,10 +49,12 @@
 import '../assets/estilos/Carta.css'
 import inventory from './../database/menu.json'
 import NavBarVue from '@/components/NavBar.vue'
+import NavBar from '@/components/NavBar.vue'
 export default {
 	name: "Menu",
 	components:{
-		NavBarVue
+		NavBarVue,
+		NavBar
 	},
 	data() {
 		return {
@@ -90,7 +92,7 @@ export default {
 		},
 		addToCart(details){
 			this.$store.state.cart.push(details)
-		}
+		},
 	},
 	mounted(){
 		this.getCategories()

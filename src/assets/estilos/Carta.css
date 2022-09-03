@@ -14,7 +14,8 @@
 
 .img-product{
 	border-radius: 15px;
-	box-shadow: 5px 10px 20px #ccc
+	box-shadow: 5px 5px 5px #ccc;
+	position: relative;
 }
 
 .products-item{
@@ -23,6 +24,7 @@
 	padding:10px 20px;
 	max-width: 90%;
 	border-radius: 15px;
+	zoom:10px;
 }
 
 .title-product{
@@ -30,28 +32,20 @@
 }
 
 .add-cart-item{
-	max-width: 40%;
-	display:flex;
+	float: right;
+	position: relative;
 }
 
 .add-cart-item .form-control{
 	border-radius: 0;
-	text-align: center;
-}
-
-.btn.btn-alitas.left{
-	border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.btn.btn-alitas.right{
-	border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+	text-align: right;
 }
 
 p{
 	margin-bottom:5px !important
 }
 .btn-warning{
-	margin-left: 30px
+	margin-left: 30px;
+	border-radius: 100%;
+	box-shadow: 5px 5px 5px rgb(175, 174, 174);
 }
