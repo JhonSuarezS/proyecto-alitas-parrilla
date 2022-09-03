@@ -53,7 +53,11 @@
              </div>
              <div class="offcanvas-body">
               <img src="@/assets/img/Logo-Parrilla.jpg" class="img-fluid container-img-cart"  alt="Responsive image">
-              
+              <ul>
+				<li :key="cart.name" v-for="cart in $store.state.cart">
+					{{ cart.name }}
+				</li>
+			  </ul>
              </div>
              <div class="style"></div>
          </div>

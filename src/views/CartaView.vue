@@ -26,13 +26,13 @@
 										<p class="price-product">{{ formatNumber((parseFloat(details.value).toFixed(2))) }}</p>
 										<small>{{ details.desc }}</small>
 										<div class="add-cart-item">
-											<button v-if="counter > '0'" class="btn btn-alitas left" @click="counter--">-</button>
+											<!--<button v-if="counter > '0'" class="btn btn-alitas left" @click="counter--">-</button>
 									        
 											<span style="margin: 10%; ">{{counter}}</span>
 											
-											<button class="btn btn-alitas right" @click="counter++"> +</button>
+											<button class="btn btn-alitas right" @click="counter++"> +</button>-->
 																		
-											<button type="button" class="btn btn-warning" title="Agregue producto al carrito">Agregar</button>
+											<button type="button" class="btn btn-warning" @click="addToCart(details)" title="Agregue producto al carrito">Agregar</button>
 										</div>	
 									</div>
 								</div>
@@ -45,7 +45,7 @@
 	</div>
 </template>
 
-<script lang="ts">
+<script>
 import '../assets/estilos/Carta.css'
 import inventory from './../database/menu.json'
 import NavBarVue from '@/components/NavBar.vue'
@@ -59,7 +59,7 @@ export default {
 			categories:[],
 			products:[],
 			assets:'../assets/img/',
-			counter: 0
+			counter: 0,
 		}
 	},
 	methods:{
@@ -67,7 +67,7 @@ export default {
 			console.log(inventory.categorias)
 			inventory.categorias.map((c) => this.categories.push(c))
 		},
-		filterCategory(category: string){
+		filterCategory(category){
 			//console.log(inventory.productos)
 			this.products = []
 			inventory.productos.map((v) => {
@@ -87,6 +87,9 @@ export default {
 		},
 		getProducts(){
 			this.products = inventory.productos
+		},
+		addToCart(details){
+			this.$store.state.cart.push(details)
 		}
 	},
 	mounted(){
